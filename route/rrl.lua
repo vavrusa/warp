@@ -126,7 +126,6 @@ function M.init(conf)
 	conf.serve = function () end
 	conf.complete = complete
 	return conf
-	
 end
 
 return M

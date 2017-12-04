@@ -90,7 +90,6 @@ function M.init(conf)
 	           :add(dns.rdata.soa(soa:format(conf.zone, conf.zone, os.time())), 5)
 	conf.serve = serve
 	return conf
-	
 end
 
 return M

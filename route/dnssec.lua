@@ -49,7 +49,7 @@ local function sign_section(self, req, section, writer)
 		end
 	end
 	if dedup then
-		local signer = self.signer		
+		local signer = self.signer
 		-- Sign DNSKEY with KSK
 		if dedup:type() == dns.type.DNSKEY then
 			signer = dnssec.signer(self.ksk)
@@ -182,7 +182,6 @@ function M.init(conf)
 	end
 	-- Return signer context
 	return c
-	
 end
 
 return M
